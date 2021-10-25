@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <div class="heading-menu">
+    <div class="heading-cart">
       <!-- Logo -->
       <div class="logo">
         <a href="index.html">
@@ -93,33 +93,73 @@
           <label for="pickup">Pick up in store</label><br>
         <h4>Choose pickup time</h4>
         <select name="list-times" id="list-times">
-          <option value="11:00AM">&ensp;11:00AM&ensp;</option>
-          <option value="11:30AM">&ensp;11:30AM&ensp;</option>
-          <option value="12:00PM">&ensp;12:00PM&ensp;</option>
-          <option value="12:30PM">&ensp;12:30PM&ensp;</option>
-          <option value="01:00PM">&ensp;01:00PM&ensp;</option>
-          <option value="01:30PM">&ensp;01:30PM&ensp;</option>
-          <option value="02:00PM">&ensp;02:00PM&ensp;</option>
-          <option value="02:30PM">&ensp;02:30PM&ensp;</option>
+          <option value="11:00AM">&ensp;11:00 AM&ensp;</option>
+          <option value="11:30AM">&ensp;11:30 AM&ensp;</option>
+          <option value="12:00PM">&ensp;12:00 PM&ensp;</option>
+          <option value="12:30PM">&ensp;12:30 PM&ensp;</option>
+          <option value="01:00PM">&ensp;01:00 PM&ensp;</option>
+          <option value="01:30PM">&ensp;01:30 PM&ensp;</option>
+          <option value="02:00PM">&ensp;02:00 PM&ensp;</option>
+          <option value="02:30PM">&ensp;02:30 PM&ensp;</option>
         </select>
       </div>
 
       <div class="delivery">
         <input type="radio" id="delivered" name="receive-option" value="delivered">
           <label for="delivered">Get it delivered home</label><br>
+
+        <h4>Enter Shipping Address</h4>
+        <div class="input-container">
+          <label for="fname">First Name</label><br>
+          <input type="text" id="fname" name="fname">
+
+          <label for="lname">Last Name</label><br>
+          <input type="text" id="lname" name="lname"><br>
+
+          <label for="phone">Phone Number</label><br>
+          <input type="text" id="phone" name="phone" placeholder=" 000-0000-0000"><br>
+
+          <label for="address1">Address</label><br>
+          <input type="text" id="address1" name="address1" placeholder=" Street Address">
+          <label for="address2"></label>
+          <input type="text" id="address2" name="address2" placeholder=" Apt, suite, unit, floor number, etc."><br>
+
+          <label for="city">City</label><br>
+          <input type="text" id="city" name="city"><br>
+
+          <label for="state">State</label><br>
+          <input type="text" id="state" name="state"><br>
+
+          <label for="zipcode">Zipcode</label><br>
+          <input type="text" id="zipcode" name="zipcode"><br>
+
+          <div class="instructions-heading">
+            <label for="instructions">Delivery Instructions</label><br>
+            <input type="text" id="instructions" name="instructions" placeholder=" Enter any delivery preferences, access code, etc. (optional)"><br>
+          </div>
+          <h5>Delivery Time Estimate</h5>
+          <h6>Delivered by 5pm today</h6>
+          <!-- <button class="deliver-address-btn">Deliver to this address</button> -->
+        </div>
+
       </div>
     </div>
 
+
+
     <div class="payment">
       <h2>PAYMENT</h2>
-      <h3>Enter credit or debit card</h3>
-      <label for="cardnum">Card Number:</label>
-      <input type="text" id="cardnum" name="cardnum"><br><br>
+      <h4>Enter credit or debit card</h4>
+      <div class="pay-input-container">
+        <label for="cardnum">Card Number:</label>
+        <input type="text" id="cardnum" name="cardnum"><br>
 
-      <label for="expdate">Expiration Date:</label>
-      <input type="text" id="expdate" name="expdate"><br><br>
+        <label for="expdate">Expiration Date:</label>
+        <input type="text" id="expdate" name="expdate"><br>
 
-      <label for="nameoncard">Name on Card:</label>
-      <input type="text" id="nameoncard" name="nameoncard"><br><br>
-
+        <label for="nameoncard">Name on Card:</label>
+        <input type="text" id="nameoncard" name="nameoncard"><br>
+      </div>
+      <button class="place-order-btn">Place Order</button>
     </div>
+ </body>

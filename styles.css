@@ -57,7 +57,7 @@
   left: 610px;
 }
 
-#menu:hover, #order:hover {
+#menu:hover, #order:hover, #cart:hover {
   color: #422308;
   border-bottom: 3px solid #422308;
 }
@@ -164,7 +164,7 @@
 
 .order-container1 {
   position: absolute;
-  width: 500px;
+  width: 380px;
   height: 183px;
   top: 160px;
   color: black;
@@ -192,14 +192,12 @@
 
 .order img {
   position: absolute;
-  width: 250px;
-  height: 183px;
   right: 0px;
 }
   
 .order-container2  {
   position: absolute;
-  width: 500px;
+  width: 380px;
   height: 183px;
   top: 370px;
   border-style: solid;
@@ -209,7 +207,7 @@
 
 .order-container3  {
   position: absolute;
-  width: 500px;
+  width: 380px;
   height: 183px;
   top: 580px;
   border-style: solid;
@@ -219,10 +217,10 @@
 
 .order-container4  {
   position: absolute;
-  width: 500px;
+  width: 380px;
   height: 183px;
   top: 160px;
-  left: 700px;
+  left: 600px;
   border-style: solid;
   border-color: #C4C4C4;
   border-width: 1px;
@@ -230,10 +228,10 @@
 
 .order-container5  {
   position: absolute;
-  width: 500px;
+  width: 380px;
   height: 183px;
   top: 370px;
-  left: 700px;
+  left: 600px;
   border-style: solid;
   border-color: #C4C4C4;
   border-width: 1px;
@@ -241,10 +239,10 @@
 
 .order-container6  {
   position: absolute;
-  width: 500px;
+  width: 380px;
   height: 183px;
   top: 580px;
-  left: 700px;
+  left: 600px;
   border-style: solid;
   border-color: #C4C4C4;
   border-width: 1px;
@@ -349,7 +347,7 @@
   padding-left: 16px;
 }
 
-.listQuantities {
+.listItems {
   position: absolute;
   top: 430px;
   font-size: 20px;
@@ -520,6 +518,11 @@
 }
 
 /* Checkout Page */
+.heading-cart #cart {
+  border-bottom: 3px solid #870000;
+  border-bottom-right-radius: 10px;
+}
+
 .cart-heading h1 {
   position: absolute;
   top: 110px;
@@ -530,7 +533,7 @@
   font-size: 40px;
 }
 
-.cart-heading h2 {
+.cart-heading h2{
   position: absolute;
   width: 155px;
   height: 57px;
@@ -644,7 +647,7 @@
 .add-more {
   position: absolute;
   top: 330px;
-  left: 50px;
+  left: 70px;
   background-color: #F8F8F8;
   border: 3px solid #870000;
   box-sizing: border-box;
@@ -678,10 +681,14 @@
 
 .select-option {
   position: absolute;
-  width: 155px;
-  height: 57px;
   top: 680px;
   left: 190px;
+}
+
+.select-option h2 {
+  position: absolute;
+  width: 300px;
+  height: 57px;
   font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -690,8 +697,239 @@
   color: #870000;
 }
 
+.pickup {
+  position: absolute;
+  width: 326px;
+  height: 46px;
+  top: 80px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 41px;
+  color: #424242;
+}
+
+.pickup h4 {
+  position: absolute;
+  width: 309px;
+  height: 36px;
+  top: 12px;
+  left: 27px;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 41px;
+  color: #424242;
+}
+
+#list-times {
+  position: absolute;
+  width: 213px;
+  height: 35px;
+  left: 27px;
+  top: 75px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  padding-left: 12px;
+
+}
+
+.delivery {
+  position: absolute;
+  width: 326px;
+  height: 46px;
+  top: 210px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 41px;
+  color: #424242;
+}
+
+.delivery h4 {
+  position: absolute;
+  width: 309px;
+  height: 36px;
+  top: 12px;
+  left: 27px;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 41px;
+  color: #424242;
+}
+
+.input-container {
+  position: absolute;
+  width: 423px;
+  height: 36px;
+  top: 70px;
+  left: 27px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  color: #424242;
+}
+
+#fname, #lname, #phone, #address1, #address2, #city, #state, #zipcode, #instructions {
+  position: relative;
+  width: 423px;
+  height: 36px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 34px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #424242;
+  border: 2px solid #C4C4C4;
+  border-radius: 10px;
+}
+
+#instructions {
+  height: 100px;
+}
+
+.instructions-heading {
+  position: absolute;
+  width: 423px;
+  height: 36px;
+  top: 650px;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 41px;
+  color: #424242;
+}
+
+
+.input-container h5 {
+  position: absolute;
+  width: 423px;
+  height: 36px;
+  top: 790px;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 41px;
+  color: #424242;
+}
+
+.input-container h6 {
+  position: absolute;
+  width: 423px;
+  height: 36px;
+  top: 810px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  color: #424242;
+}
+
+/* .input-container button {
+  position: absolute;
+  top: 830px;
+  left: 190px;
+  width: 250px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #870000;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+} */
+
 .payment {
   position: absolute;
-  top: 1000px;
+  top: 1850px;
   left: 190px;
+  width: 300px;
+  height: 57px;
+  padding-bottom: 500px;
+}
+
+.payment h2 {
+  position: absolute;
+  width: 300px;
+  height: 57px;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 54px;
+  color: #870000;
+}
+
+.payment h4 {
+  position: absolute;
+  width: 300px;
+  height: 36px;
+  top: 50px;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 41px;
+  color: #424242;
+}
+
+.pay-input-container {
+  position: absolute;
+  width: 423px;
+  height: 36px;
+  top: 110px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 34px;
+  color: #424242;
+}
+
+#cardnum, #expdate, #nameoncard {
+  position: relative;
+  width: 423px;
+  height: 36px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 34px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  color: #424242;
+  border: 2px solid #C4C4C4;
+  border-radius: 10px;
+}
+
+.place-order-btn {
+  position: absolute;
+  top: 400px;
+  width: 220px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #870000;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
 }
