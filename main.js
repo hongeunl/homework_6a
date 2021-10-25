@@ -45,7 +45,6 @@ function addToCart(flavor) {
 
   newItem = new Roll(flavor, thisGlaze, thisPrice);
   cartArray.push(newItem);
-  console.log(cartArray);
   updateCartNum();
 }
 
@@ -53,8 +52,8 @@ function addToCart(flavor) {
 function updateCartNum() {
   var numItemsCart = cartArray.length;
   if (numItemsCart > 0) {
-    var cartNum = document.getElementById("cart");
-    cartNum.innerHTML = "Cart " + numItemsCart;
+    var cartNum = document.getElementById("cartNumUpdate");
+    cartNum.innerHTML = numItemsCart;
   }
 }
 
